@@ -36,6 +36,8 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
 - Chain ID: 1660990954
 - RPC: https://public.sepolia.rpc.status.network
 - Explorer: https://sepoliascan.status.network
+- Faucet: https://faucet.status.network
+- Bridge: https://bridge.status.network/
 
 **Smart Contract:**
 - Address: 0x4F22d77a85b094245A6535a01f0ad024Bdaa117e
@@ -63,12 +65,6 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
 ### ERC-8004: Onchain Agent Identity
 This agent aligns with ERC-8004 (onchain agent identity registry), which was deployed in January 2026 across 20+ chains. The agent operates as an autonomous onchain entity with permanent identity.
 
-### x402: HTTP Payments
-The system demonstrates machine-to-machine commerce capabilities compatible with x402 payment protocol for future payment integration.
-
-### EIP-7702: Account Abstraction
-While not currently implemented, the architecture supports EIP-7702 which gives EOAs smart contract superpowers without migration.
-
 ## Files
 
 - `contracts/StatusNotebook.sol` - Smart contract
@@ -83,7 +79,7 @@ While not currently implemented, the architecture supports EIP-7702 which gives 
 
 This agent was built with the following skills loaded:
 
-- **ethskills/standards** - ERC standards knowledge (ERC-8004, x402)
+- **ethskills/standards** - ERC standards knowledge (ERC-8004)
 - **ethskills/gas** - Understanding gas costs and L2 economics
 - **ethskills/wallets** - Wallet creation and key safety
 - **synthesis.md** - Hackathon API and registration

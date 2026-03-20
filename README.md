@@ -136,11 +136,12 @@ Status Network supports protocol-level gasless transactions where gas is set to 
 - No gas fees for transactions
 - Transactions are still secured by the network
 
+### Getting Testnet ETH
+- **Faucet**: https://faucet.status.network
+- **Bridge**: https://bridge.status.network/
+
 ### ERC-8004: Onchain Agent Identity
 This project aligns with ERC-8004 (onchain agent identity registry), deployed January 2026 on 20+ chains. The AI agent operates as an autonomous entity onchain.
-
-### x402: HTTP Payments
-The project demonstrates machine-to-machine commerce capabilities compatible with x402 payment protocol.
 
 ## Resources
 
