@@ -1,0 +1,20 @@
+{
+  "name": "status-notebook",
+  "version": "1.0.0",
+  "description": "AI Notebook on Status Network with Vercel",
+  "type": "module",
+  "scripts": {
+    "vercel:dev": "vercel dev",
+    "vercel:deploy": "vercel deploy"
+  },
+  "dependencies": {
+    "@google/genai": "^1.46.0",
+    "dotenv": "^17.3.1",
+    "ethers": "^6.16.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "vercel": "^50.33.1"
+  }
+}
