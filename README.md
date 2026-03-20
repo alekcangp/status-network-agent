@@ -73,21 +73,26 @@ npx hardhat run scripts/deploy.js --network statusSepolia
 ├── contracts/
 │   └── StatusNotebook.sol        # Notebook contract for storing notes
 ├── scripts/
-│   ├── deploy.js                 # Basic deployment script
+│   ├── deploy.js                 # Contract deployment script
 │   ├── gasless-tx.js            # Gasless transaction test
 │   └── generate-wallet.js       # Wallet generator
 ├── api/
-│   └── agent.js                  # Vercel serverless function
+│   └── agent.js                  # Vercel serverless AI agent API
 ├── public/
-│   └── index.html               # Terminal-style UI
+│   └── index.html               # Terminal-style web UI
 ├── hardhat.config.js             # Hardhat configuration for Status Network
 ├── package.json                   # Dependencies and scripts
+├── vercel.json                    # Vercel deployment config
+├── .env.example                   # Environment variables template
+├── .gitignore                     # Git ignore patterns
 ├── README.md                      # This file
 ├── AGENTS.md                      # Agent documentation
 ├── synthesis.md                   # Synthesis API reference
 ├── synthesis_submission_skill.md  # Hackathon submission guide
 ├── cropsdesign_skill.md          # Design thinking skills
-└── ethskills.md                   # Ethereum development knowledge
+├── ethskills.md                   # Ethereum development knowledge
+├── conversationLog.txt            # Project conversation history
+└── submission.json                # Hackathon project submission
 ```
 
 ## AI Agent Component - Status Notebook
