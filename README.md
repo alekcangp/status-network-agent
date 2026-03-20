@@ -110,6 +110,8 @@ The AI Agent transforms Status Network into an **intelligent notebook**:
 - `getAllEntries()` - Get all entries for LLM analysis
 - `getCount()` - Total entries stored
 - `getLatest()` - Get most recent entry
+- `getEntry(index)` - Get specific entry
+- `getInfo()` - Get contract info
 
 ## Technical Details
 
@@ -128,11 +130,12 @@ This project aligns with ERC-8004 (onchain agent identity registry), deployed Ja
 
 ## Resources
 
-https://synthesis.md/skill.md 
-https://devfolio.notion.site/Synthesis-Builder-Guide-32156997768d810bbb8ef8967439efa0 
-https://www.cropsdesign.com/SKILL.md 
-https://ethskills.com/SKILL.md 
-https://synthesis.devfolio.co/submission/skill.md
+- [Synthesis Hackathon](https://synthesis.devfolio.co/)
+- [Synthesis Builder Guide](https://devfolio.notion.site/Synthesis-Builder-Guide-32156997768d810bbb8ef8967439efa0)
+- [Status Network Quick Start](https://docs.status.network/overview/introduction/quick-start)
+- [Crops Design Skills](https://www.cropsdesign.com/SKILL.md)
+- [Ethereum Skills](https://ethskills.com/SKILL.md)
+- [Submission Guide](https://synthesis.devfolio.co/submission/skill.md)
 
 ## License
 
