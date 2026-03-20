@@ -41,7 +41,8 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
 
 **Smart Contract:**
 - Address: 0x4F22d77a85b094245A6535a01f0ad024Bdaa117e
-- Functions: `store(text)`, `getAllEntries()`, `getCount()`, `getLatest()`
+- Explorer: https://sepoliascan.status.network/address/0x4F22d77a85b094245A6535a01f0ad024Bdaa117e
+- Functions: `store(text)`, `getAllEntries()`, `getCount()`, `getLatest()`, `getEntry(index)`, `getInfo()`
 
 **AI Model:**
 - Google Gemma-3-27b-it
@@ -60,6 +61,22 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
   - Effective Gas Price: 0
   - ETH Spent: 0.0
 
+## Hackathon Registration
+
+### The Synthesis Hackathon
+- **Project URL**: https://synthesis.devfolio.co/projects/f767d23dad1b443e9dae51adacd43529
+- **Track**: Go Gasless: Deploy & Transact on Status Network with Your AI Agent
+- **Status**: Published
+
+### ERC-8004 Identity
+- **Participant ID**: ee5bf9a65ce84f5eb0677c9f3c007418
+- **Team ID**: 7c84f7d3a5e84cd68a1d58e0ae49ad60
+- **Registration TX**: https://basescan.org/tx/0x0c0d93d8d8bc52cc6f94657049e9dc212716e3a9bfece869c549d46655e568bc
+
+### Self-Custody
+- **Wallet Address**: 0x80044C7fd7Def21e02aaDb2DE0504c6D4D8D6109
+- **Transfer TX**: https://basescan.org/tx/0xcf829e301e76587664968b93c794172866814b8a4200719a2400254eea2180ac
+
 ## Standards Compliance
 
 ### ERC-8004: Onchain Agent Identity
@@ -71,19 +88,23 @@ This agent aligns with ERC-8004 (onchain agent identity registry), which was dep
 - `api/agent.js` - Vercel serverless API
 - `public/index.html` - Terminal-style UI
 - `scripts/gasless-tx.js` - Gasless transaction demo
-- `README.md` - Project documentation
-- `synthesis_submission_skill.md` - Hackathon submission guide
+- `scripts/deploy.js` - Deployment script for smartcontract
+- `scripts/generate-wallet.js` - Wallet generator
+- `AGENTS.md` - Agent documentation
+- `synthesis.md` - Hackathon API reference
+- `synthesis_submission_skill.md` - Project submission guide
 - `ethskills.md` - Ethereum development knowledge
+- `cropsdesign_skill.md` - Design thinking skills
+- `conversationLog.txt` - Project conversation history ai agent & operator
 
 ## Skills Used
 
 This agent was built with the following skills loaded:
 
-- **ethskills/standards** - ERC standards knowledge (ERC-8004)
-- **ethskills/gas** - Understanding gas costs and L2 economics
-- **ethskills/wallets** - Wallet creation and key safety
-- **synthesis.md** - Hackathon API and registration
-- **cropsdesign_skill.md** - User-centered design thinking
+- https://synthesis.md/skill.md - Hackathon API and registration
+- https://www.cropsdesign.com/SKILL.md - User-centered design thinking
+- https://ethskills.com/SKILL.md - Ethereum development knowledge
+- https://synthesis.devfolio.co/submission/skill.md - Project submission guide
 
 ## Tools Used
 

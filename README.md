@@ -4,11 +4,6 @@ An AI agent-powered project that deploys a smart contract and executes gasless t
 
 ## Requirements
 
-### Bounty: "Go Gasless: Deploy & Transact on Status Network with Your AI Agent"
-- **Prize Pool**: $2,000 (equal share, $50/team)
-- **Chain ID**: 1660990954 (Status Network Sepolia Testnet)
-- **Track**: AI Agents / DeFi Agents
-
 ### Qualification Criteria
 1. ✅ Verified smart contract deployment on Status Network Sepolia Testnet
 2. ✅ At least one gasless transaction (gasPrice=0, gas=0) with tx hash proof
@@ -38,7 +33,9 @@ An AI agent-powered project that deploys a smart contract and executes gasless t
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
-- A wallet with Status Network Sepolia Testnet ETH (get from faucet)
+- A wallet with Status Network Sepolia Testnet ETH
+  - **Faucet**: https://faucet.status.network
+  - **Bridge**: https://bridge.status.network/
 
 ### Setup
 
@@ -57,14 +54,6 @@ cp .env.example .env
 # - CONTRACT_ADDRESS: The deployed contract address
 ```
 
-3. Get Google GenAI API Key:
-   - Go to: https://aistudio.google.com/app/apikey
-   - Create a new API key
-   - Add it to your .env file
-
-4. Get test ETH:
-   - Get Sepolia ETH from: https://faucet.status.network
-
 ### Run Gasless Transaction Test
 
 ```bash
@@ -82,7 +71,6 @@ npx hardhat run scripts/deploy.js --network statusSepolia
 ```
 .
 ├── contracts/
-│   ├── StatusAgentStorage.sol    # Simple storage contract
 │   └── StatusNotebook.sol        # Notebook contract for storing notes
 ├── scripts/
 │   ├── deploy.js                 # Basic deployment script
@@ -129,26 +117,22 @@ The AI Agent transforms Status Network into an **intelligent notebook**:
 - **RPC**: https://public.sepolia.rpc.status.network
 - **Chain ID**: 1660990954
 - **Explorer**: https://sepoliascan.status.network
-- **Faucet**: https://faucet.status.network
 
 ### Gasless Transactions
 Status Network supports protocol-level gasless transactions where gas is set to 0 at the protocol level:
 - No gas fees for transactions
 - Transactions are still secured by the network
 
-### Getting Testnet ETH
-- **Faucet**: https://faucet.status.network
-- **Bridge**: https://bridge.status.network/
-
 ### ERC-8004: Onchain Agent Identity
 This project aligns with ERC-8004 (onchain agent identity registry), deployed January 2026 on 20+ chains. The AI agent operates as an autonomous entity onchain.
 
 ## Resources
 
-- [Synthesis Hackathon](https://synthesis.devfolio.co) - Main hackathon page
-- [Synthesis Submission Guide](synthesis_submission_skill.md) - How to submit your project
-- [Design Thinking Skills](cropsdesign_skill.md) - CROPs methodology for building user-centered agents
-- [ETH Skills](ethskills.md) - Current Ethereum development knowledge
+https://synthesis.md/skill.md 
+https://devfolio.notion.site/Synthesis-Builder-Guide-32156997768d810bbb8ef8967439efa0 
+https://www.cropsdesign.com/SKILL.md 
+https://ethskills.com/SKILL.md 
+https://synthesis.devfolio.co/submission/skill.md
 
 ## License
 
