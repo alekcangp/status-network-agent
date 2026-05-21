@@ -7,10 +7,10 @@ dotenv.config();
 export default {
   solidity: "0.8.19",
   networks: {
-    // Status Network Hoodi Testnet
-    statusHoodi: {
-      url: "https://public.hoodi.rpc.status.network",
-      chainId: 374,
+    // Linea Sepolia Testnet (Status Network migrated to Linea)
+    lineaSepolia: {
+      url: "https://rpc.sepolia.linea.build",
+      chainId: 59141, // 0xe705
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
     },
     // Local node for testing
@@ -20,16 +20,16 @@ export default {
   },
   etherscan: {
     apiKey: {
-      // Status Network uses Blockscout - no API key needed
-      statusHoodi: "abc",
+      // Linea Sepolia uses Blockscout explorer
+      lineaSepolia: "abc",
     },
     customChains: [
       {
-        network: "statusHoodi",
-        chainId: 374,
+        network: "lineaSepolia",
+        chainId: 59141,
         urls: {
-          apiURL: "https://hoodiscan.status.network/api",
-          browserURL: "https://hoodiscan.status.network",
+          apiURL: "https://sepolia.lineascan.build/api",
+          browserURL: "https://sepolia.lineascan.build",
         },
       },
     ],
