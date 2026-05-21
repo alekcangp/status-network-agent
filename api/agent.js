@@ -87,7 +87,7 @@ Total notes: ${count}
 Give a natural, brief response.`;
 
             const response = await ai.models.generateContent({
-                model: "gemma-3-27b-it",
+                model: "gemini-3.1-flash-lite",
                 contents: responsePrompt
             });
 
@@ -114,7 +114,7 @@ ${context}
 Provide a helpful answer about the stored notes.`;
 
             const response = await ai.models.generateContent({
-                model: "gemma-3-27b-it",
+                model: "gemini-3.1-flash-lite",
                 contents: retrievePrompt
             });
 
@@ -132,7 +132,7 @@ Provide a helpful answer about the stored notes.`;
 Respond naturally as a helpful AI notebook assistant.`;
 
             const response = await ai.models.generateContent({
-                model: "gemma-3-27b-it",
+                model: "gemini-3.1-flash-lite",
                 contents: chatPrompt
             });
 
