@@ -64,14 +64,14 @@ Reply with exactly one word: STORE, RETRIEVE, or CHAT`;
         const contract = new ethers.Contract(STATUS_NETWORK.contractAddress, contractABI, wallet);
 
         if (intent.includes("STORE")) {
-            // Store to contract (gasless)
-            console.log("💾 Storing...");
-            
-            const tx = await contract.store(message, {
-                maxFeePerGas: 0,
-                maxPriorityFeePerGas: 0
-            });
-            await tx.wait();
+             // Store to contract (with minimal gas fee for Linea Sepolia)
+             console.log("💾 Storing...");
+             
+             const tx = await contract.store(message, {
+                 maxFeePerGas: ethers.parseUnits("1", "gwei"),
+                 maxPriorityFeePerGas: ethers.parseUnits("1", "gwei")
+             });
+             await tx.wait();
             
             // Get count
             const count = await contract.getCount();
