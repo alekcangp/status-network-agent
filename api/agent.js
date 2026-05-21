@@ -5,10 +5,10 @@
 import { GoogleGenAI } from "@google/genai";
 import { ethers } from "ethers";
 
-// Status Network Sepolia configuration
+// Status Network Hoodi configuration
 const STATUS_NETWORK = {
-    chainId: 1660990954,
-    rpc: "https://public.sepolia.rpc.status.network",
+    chainId: 374,
+    rpc: "https://public.hoodi.rpc.status.network",
     contractAddress: process.env.CONTRACT_ADDRESS
 };
 
@@ -77,7 +77,7 @@ Reply with exactly one word: STORE, RETRIEVE, or CHAT`;
             const count = await contract.getCount();
             
             // LLM response
-            const explorerUrl = `https://sepoliascan.status.network/tx/${tx.hash}`;
+            const explorerUrl = `https://hoodiscan.status.network/tx/${tx.hash}`;
             const responsePrompt = `User said: "${message}"
 
 You stored this on Status Network blockchain (gasless!).

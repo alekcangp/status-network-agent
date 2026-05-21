@@ -1,27 +1,27 @@
 # Status Network Gasless AI Agent
 
-An AI agent-powered project that deploys a smart contract and executes gasless transactions on Status Network Sepolia Testnet. Built for The Synthesis hackathon.
+An AI agent-powered project that deploys a smart contract and executes gasless transactions on Status Network Hoodi Testnet. Built for The Synthesis hackathon.
+
+## ⚠️ Network Migration
+
+**Status Network Sepolia Testnet has been deprecated.** This project has been migrated to the new **Hoodi Testnet** (chain ID: 374).
+
+- **Old Network**: Sepolia (chain ID: 1660990954) - DEPRECATED by end of April 2026
+- **New Network**: Hoodi (chain ID: 374) - ACTIVE
+
+See [migration guide](https://status-im.notion.site/status-network-sepolia-testnet-deprecation-notice) for details.
 
 ## Requirements
 
 ### Qualification Criteria
-1. ✅ Verified smart contract deployment on Status Network Sepolia Testnet
-2. ✅ At least one gasless transaction (gasPrice=0, gas=0) with tx hash proof
+1. ✅ Verified smart contract deployment on Status Network Hoodi Testnet
+2. ✅ At least one gasless transaction (maxFeePerGas=0, maxPriorityFeePerGas=0) with tx hash proof
 3. ✅ AI agent component that performs onchain actions
 4. ✅ README or short video demo
 
 ## Transaction Proof
 
-### Contract Deployment
-- **Contract**: StatusNotebook
-- **Address**: [0x4F22d77a85b094245A6535a01f0ad024Bdaa117e](https://sepoliascan.status.network/address/0x4F22d77a85b094245A6535a01f0ad024Bdaa117e)
-- **Transaction**: [0x8e50f5eba21e4b3ba90e141707fd3c307e6029d7fae585cec3994744d3c0a79a](https://sepoliascan.status.network/tx/0x8e50f5eba21e4b3ba90e141707fd3c307e6029d7fae585cec3994744d3c0a79a)
-
-### Gasless Transaction (Proof of gas=0)
-- **Transaction**: [0x3d8826a9be20e94152bf4e629daf892eb2283e14f94961a02b3f0296ccb09942](https://sepoliascan.status.network/tx/0x3d8826a9be20e94152bf4e629daf892eb2283e14f94961a02b3f0296ccb09942)
-- **Gas Used**: 142864
-- **Effective Gas Price**: 0
-- **ETH Spent**: 0.0
+*Deploy to Hoodi testnet to generate new transaction proofs.*
 
 ## Live Demo
 
@@ -33,8 +33,8 @@ An AI agent-powered project that deploys a smart contract and executes gasless t
 ### Prerequisites
 - Node.js 18+
 - npm or yarn
-- A wallet with Status Network Sepolia Testnet ETH
-  - **Faucet**: https://faucet.status.network
+- A wallet with Status Network Hoodi Testnet ETH
+  - **Faucet**: https://eth.faucet.status.network
   - **Bridge**: https://bridge.status.network/
 
 ### Setup
@@ -57,13 +57,13 @@ cp .env.example .env
 ### Run Gasless Transaction Test
 
 ```bash
-npx hardhat run scripts/gasless-tx.js --network statusSepolia
+npx hardhat run scripts/gasless-tx.js --network statusHoodi
 ```
 
 ### Deploy Contract
 
 ```bash
-npx hardhat run scripts/deploy.js --network statusSepolia
+npx hardhat run scripts/deploy.js --network statusHoodi
 ```
 
 ## Project Structure
@@ -120,10 +120,10 @@ The AI Agent transforms Status Network into an **intelligent notebook**:
 
 ## Technical Details
 
-### Status Network
-- **RPC**: https://public.sepolia.rpc.status.network
-- **Chain ID**: 1660990954
-- **Explorer**: https://sepoliascan.status.network
+### Status Network Hoodi Testnet
+- **RPC**: https://public.hoodi.rpc.status.network
+- **Chain ID**: 374
+- **Explorer**: https://hoodiscan.status.network
 
 ### Gasless Transactions
 Status Network supports protocol-level gasless transactions where gas is set to 0 at the protocol level:

@@ -1,4 +1,4 @@
-const { ethers } = require("ethers");
+import { ethers } from "ethers";
 
 // Generate random wallet
 const wallet = ethers.Wallet.createRandom();

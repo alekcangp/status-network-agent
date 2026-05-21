@@ -1,7 +1,7 @@
 import hre from "hardhat";
 
 async function main() {
-  console.log("Deploying StatusNotebook to Status Network Sepolia...");
+  console.log("Deploying StatusNotebook to Status Network Hoodi Testnet...");
   
   // Get the deployer account
   const [deployer] = await hre.ethers.getSigners();

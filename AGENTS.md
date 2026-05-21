@@ -2,9 +2,18 @@
 
 ## Agent Overview
 
-This is an AI agent system that enables gasless transactions on Status Network Sepolia Testnet. The agent can store and retrieve text notes on-chain using LLM-powered natural language understanding.
+This is an AI agent system that enables gasless transactions on Status Network Hoodi Testnet. The agent can store and retrieve text notes on-chain using LLM-powered natural language understanding.
 
 Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibility.
+
+## Network Migration (Sepolia → Hoodi)
+
+The Status Network Sepolia testnet has been deprecated and migrated to Hoodi testnet:
+
+- **Old Network**: Status Network Sepolia (chain ID: 1660990954) - DEPRECATED
+- **New Network**: Status Network Hoodi (chain ID: 374) - ACTIVE
+
+See the [migration guide](https://status-im.notion.site/status-network-sepolia-testnet-deprecation-notice) for details.
 
 ## Capabilities
 
@@ -32,16 +41,16 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
 ### Technical Details
 
 **Network:**
-- Status Network Sepolia Testnet
-- Chain ID: 1660990954
-- RPC: https://public.sepolia.rpc.status.network
-- Explorer: https://sepoliascan.status.network
-- Faucet: https://faucet.status.network
+- Status Network Hoodi Testnet
+- Chain ID: 374
+- RPC: https://public.hoodi.rpc.status.network
+- Explorer: https://hoodiscan.status.network
+- Faucet: https://eth.faucet.status.network
 - Bridge: https://bridge.status.network/
 
 **Smart Contract:**
-- Address: 0x4F22d77a85b094245A6535a01f0ad024Bdaa117e
-- Explorer: https://sepoliascan.status.network/address/0x4F22d77a85b094245A6535a01f0ad024Bdaa117e
+- Address: (deploy to Hoodi to get new address)
+- Explorer: https://hoodiscan.status.network/address/{contractAddress}
 - Functions: `store(text)`, `getAllEntries()`, `getCount()`, `getLatest()`, `getEntry(index)`, `getInfo()`
 
 **AI Model:**
@@ -55,11 +64,7 @@ Built for The Synthesis hackathon with ERC-8004 onchain agent identity compatibi
 
 ## Transaction Proofs
 
-- **Contract Deployment**: 0x8e50f5eba21e4b3ba90e141707fd3c307e6029d7fae585cec3994744d3c0a79a
-- **Gasless TX**: 0x3d8826a9be20e94152bf4e629daf892eb2283e14f94961a02b3f0296ccb09942
-  - Gas Used: 142864
-  - Effective Gas Price: 0
-  - ETH Spent: 0.0
+*Deploy to Hoodi testnet to generate new transaction proofs.*
 
 ## Hackathon Registration
 

@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 async function main() {
-  console.log("=== Testing Gasless Transaction on Status Network ===\n");
+  console.log("=== Testing Gasless Transaction on Status Network Hoodi ===\n");
   
   const contractAddress = process.env.CONTRACT_ADDRESS;
   const privateKey = process.env.PRIVATE_KEY;
@@ -57,7 +57,7 @@ async function main() {
   console.log("Latest entry:", latest.text);
   
   console.log("\n=== Gasless Transaction Test Complete! ===");
-  console.log("Explorer:", `https://sepoliascan.status.network/tx/${tx.hash}`);
+  console.log("Explorer:", `https://hoodiscan.status.network/tx/${tx.hash}`);
 }
 
 main()
