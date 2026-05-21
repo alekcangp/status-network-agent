@@ -133,7 +133,7 @@ User asked to generate a new wallet and deploy the contract.
 ### Actions Taken:
 1. Generated new wallet:
    - Address: 0x80044C7fd7Def21e02aaDb2DE0504c6D4D8D6109
-   - Private Key: [REDACTED]
+   - Private Key: (not logged)
 
 2. Fixed hardhat.config.js for ESM compatibility (converted to ES modules with import/export)
 3. Installed correct Hardhat versions (v2.22.0 + hardhat-toolbox v5.0.0)
