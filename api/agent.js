@@ -44,7 +44,7 @@ Analyze the user's intent and respond with one word:
 Reply with exactly one word: STORE, RETRIEVE, or CHAT`;
 
         const decision = await ai.models.generateContent({
-            model: "gemma-3-27b-it",
+            model: "gemini-3.1-flash-lite",
             contents: decisionPrompt
         });
 
