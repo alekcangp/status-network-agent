@@ -5,10 +5,10 @@
 import { GoogleGenAI } from "@google/genai";
 import { ethers } from "ethers";
 
-// Status Network Hoodi configuration
+// Linea Sepolia configuration (Status Network equivalent)
 const STATUS_NETWORK = {
-    chainId: 374,
-    rpc: "https://public.hoodi.rpc.status.network",
+    chainId: 59141, // 0xe705
+    rpc: "https://rpc.sepolia.linea.build",
     contractAddress: process.env.CONTRACT_ADDRESS
 };
 
@@ -76,11 +76,11 @@ Reply with exactly one word: STORE, RETRIEVE, or CHAT`;
             // Get count
             const count = await contract.getCount();
             
-            // LLM response
-            const explorerUrl = `https://hoodiscan.status.network/tx/${tx.hash}`;
-            const responsePrompt = `User said: "${message}"
+             // LLM response
+             const explorerUrl = `https://sepolia.lineascan.build/tx/${tx.hash}`;
+             const responsePrompt = `User said: "${message}"
 
-You stored this on Status Network blockchain (gasless!).
+You stored this on Linea Sepolia blockchain (Status Network equivalent).
 Link: ${explorerUrl}
 Total notes: ${count}
 
